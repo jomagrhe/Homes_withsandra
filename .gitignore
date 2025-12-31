@@ -1,0 +1,17 @@
+# Dependencias (si usas npm)
+node_modules/
+
+# Archivos del Sistema Operativo
+.DS_Store
+Thumbs.db
+
+# Configuración del Editor
+.vscode/
+.idea/
+
+# Logs de errores
+npm-debug.log*
+yarn-error.log*
+
+# Archivos de entorno (donde podrías guardar el número de WhatsApp si fuera secreto)
+.env

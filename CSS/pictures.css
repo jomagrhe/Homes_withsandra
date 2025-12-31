@@ -1,0 +1,16 @@
+/* Color para el texto de la lista */
+.list-text-custom{
+    color: #4a4428; /* Un gris oscuro elegante */
+    font-size: 0.95rem;
+}
+/* Para que el enlace se vea y actúe como un botón real */
+.whatsapp-link.btn {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-link.btn:hover {
+    background-color: #36321d !important; /* Un café un poco más oscuro */
+    transform: translateY(-2px); /* Pequeño salto hacia arriba */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}

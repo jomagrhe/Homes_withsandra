@@ -1,0 +1,179 @@
+ /* Estilo para el botón de idioma */
+        .lang-switch {
+            cursor: pointer;
+            color: white !important;
+            font-weight: bold;
+            border: 1px solid white;
+            padding: 2px 8px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+/* Fuente y reset */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin:0;
+  padding-top: 100px !important;
+  background-color: rgb(253 247 236) !important;
+  color: #0b3676;
+}
+
+
+/* Header fijo */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #4a4428;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+/* Forzar que los links del menú sean blanco puro siempre */
+.navbar-dark .navbar-nav .nav-link.tab-link {
+    color: #ffffff !important;
+    opacity: 1 !important; /* Elimina el efecto opaco */
+}
+/* Efecto hover para que se note cuando pasas el mouse */
+.navbar-dark .navbar-nav .nav-link.tab-link:hover {
+    color: #f1f1f1 !important; /* Un blanco apenas grisáceo al pasar el mouse */
+    opacity: 0.8 !important;
+}
+.nav-link.active {
+    font-size: 40px;
+}
+.ms-auto .nav-link {
+    font-size: 20px !important;
+}
+.logo-img {
+  height: 160px !important;
+  width: 200px;
+  object-fit: contain;
+}
+
+h2 {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    transform: none !important;
+    font-size: 2.5rem; /* Un tamaño más normal */
+}
+.card-body p, .card-text {
+    color: #4a4428 !important;
+}
+/* Selecciona las imágenes dentro de las tarjetas del Home */
+.card-img-top {
+    width: 90%;
+    height: 300px;       /* Altura fija para que todas sean iguales */
+    object-fit: cover;   /* Recorta la imagen para que llene el espacio sin deformarse */
+    object-position: center; /* Centra la foto en el recorte */
+}
+.free{
+    color: #05350e;
+    font-weight: bold;
+    text-align:right;
+}
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*Fuente tarjeta aboutme*/
+.card-title {
+    font-size: 1.15rem; /* Bajamos de 1.25 a 1.15 */
+    line-height: 1.2;
+    hyphens: none; /* Evita que el navegador corte la palabra con guion */
+}
+/*tarjeta aboutme*/
+.fw-bold{
+    color: #4a4428;
+}
+/*tarjeta aboutme*/
+.col-12.text-center{
+    background-color: rgb(253 247 236);
+}
+/*tarjeta aboutme*/
+.row mb-5{
+    background-color: #ffffff;
+}
+/* Ajustes específicos para pantallas ultra estrechas (Galaxy Fold) */
+@media (max-width: 300px) {
+    .navbar-brand img {
+        height: 25px !important; /* Logo más pequeño */
+    }
+
+    .nav-link {
+        font-size: 0.8rem; /* Texto del menú más pequeño */
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+
+    .lang-switch {
+        font-size: 0.75rem;
+    }
+
+    /* Reducir márgenes laterales del contenedor para ganar espacio */
+    .container {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+
+
+/* Ajuste para que el contenido no se meta debajo del Navbar */
+body {
+    padding-top: 80px; /* Ajusta este valor al alto de tu barra de navegación */
+}
+
+/* Optimización para iPhone y móviles en la página About Me */
+@media (max-width: 991px) {
+    .container.mt-5.py-5 {
+        margin-top: 20px !important; /* Reduce el margen extra */
+        padding-top: 10px !important; /* Evita que se vea demasiado abajo */
+    }
+    
+    /* Asegura que el título "About Me" sea lo primero visible */
+    h2[data-key="about-title"] {
+        margin-top: 0;
+        padding-top: 0;
+    }
+}
+    /* Ajustar títulos grandes para que no se corten */
+    h2 {
+        font-size: 1.4rem !important;
+    }
+    
+    h4 {
+        font-size: 1rem !important;
+    }
+}
+/* Ajuste para el contenedor del carrusel */
+.main-carousel-img {
+    height: 300px; /* Altura fija para móviles */
+    object-fit: cover; /* Recorta la imagen para que llene el espacio sin deformarse */
+    object-position: center;
+}
+
+/* En tablets y laptops le damos más altura */
+@media (min-width: 768px) {
+    .main-carousel-img {
+        height: 500px;
+    }
+}
+
+/* Ajuste específico para que el scroll táctil sea fluido en iPhone */
+.carousel-inner {
+    border-radius: 15px; /* Opcional: bordes redondeados para que se vea más moderno */
+    overflow: hidden;
+}

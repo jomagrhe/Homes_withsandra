@@ -104,7 +104,6 @@ function updateContent() {
     updateWhatsAppLinks();
 }
 
-
 // 5. ACTUALIZAR LINKS DE WHATSAPP
 function updateWhatsAppLinks() {
     const phoneNumber = "19543769759"; // Reemplaza con tu número real
